@@ -1,11 +1,12 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import './NavBar.css';
 
 function NavBar() {
 	return (
 		<div className='NavBar'>
-			<Link to='/'>Home</Link> | <Link to='/snacks/chips'>Chips</Link> |{' '}
-			<Link to='/snacks/snickers'>Snickers</Link> |{' '}
-			<Link to='/snacks/gummyBears'>Gummy Bears</Link>
+			<NavLink to='/'>Home</NavLink> | <NavLink to='/chips'>Chips</NavLink> |{' '}
+			<NavLink to='/snickers'>Snickers</NavLink> |{' '}
+			<NavLink to='/Gummybears'>Gummy Bears</NavLink>
 		</div>
 	);
 }
